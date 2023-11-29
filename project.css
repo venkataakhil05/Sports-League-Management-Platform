@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap'); 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Section */
+#hero {
+  background-image: url(https://media.istockphoto.com/id/1402084914/photo/cricket-ball-on-top-of-cricket-bat-on-green-grass-of-cricket-ground-background.webp?b=1&s=170667a&w=0&k=20&c=kYRAWbGmWWnjynDfrSXpxXQf77nVlybDC3tzBk4rUUg=);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+#hero::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+#hero h1 {
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  position: relative;
+  color: rgb(232, 126, 126);
+}
+#hero .cta {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid  rgb(69, 65, 65);
+  border-radius: 25%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 36px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
+#hero .cta:hover {
+  color: white;
+  background-color: black;
+}
+
+/* End Hero Section */
+
+/* homepage.html */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+body{
+  background: url(pngtree-black-and-white-gym-room-with-a-row-of-equipment-image_2911173.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+header{
+  width:100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0 10px black;
+  background: rgba(12, 12, 12, 0.5);
+}
+#chk1{
+  display: none;
+   
+   
+}
+i{
+  color: #ffffff;
+  cursor: pointer;
+}
+header .logo{
+  flex: 1;
+  color:#fff;
+   
+  margin-left: 50px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+header .search-box{
+  flex: 1;
+  position: relative;
+}
+.search-box input{
+  width:100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background:lavender;
+  border-radius: 30px;
+  color:black;
+  font-size: 16px;
+  padding-left: 5px;
+  padding-right: 40px;
+  text-align: center;
+   
+}
+
+.search-box button{
+  cursor: pointer;
+  width:40px;
+  height: 40px;
+  border-radius: 30px;
+  border:none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scale(0.9);
+  background: lavender;
+  color: #fff;
+}
+header ul {
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+header ul li{
+  list-style: none;
+}
+header ul li a{
+  text-decoration: none;
+  color:#fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+header ul li a:hover{
+  border-bottom: 2px solid #e6e6fa;
+}
+header .menu{
+  font-size: 2.5em;
+  display: none;
+}
+@media(max-width:1000px){
+  .search-box button{
+      position: absolute;
+  }
+  header ul{
+      position: fixed;
+      top:100px;
+      right: -100%;
+      background: rgba(0,0,0,0.5);
+      height: calc(100vh - 100px);
+      width:50%;
+      flex-direction: column;
+      align-items: center;
+      transition: right 0.5s linear;
+  }
+   
+  header .menu{
+      display: block;
+      width:100px;
+      text-align: center;
+  }
+  #chk1:checked ~ ul{
+      right: 0;
+      
+  }
+
+}
+ main img{
+  width: 1265px;
+  height: 631px;
+}
+
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  background-color: black;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+
+/* end homepage.html */
+
+/* teampage.html */
+
+      .styled-table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 2em;
+  font-family: sans-serif;
+  min-width: 950px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  margin-left: 88px;
+ }
+.styled-table thead tr{
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+ }
+.styled-table th,
+.styled-table td{
+  padding: 12px 15px;
+
+ }
+.styled-table tbody tr{
+  border-bottom: 1px solid white;
+
+}
+.styled-table tr:nth-of-type(even)
+{
+    background-color: #f3f3f3;
+}
+.styled-table tbody tr:last-of-type{
+  border-bottom: 2px solid  #009879;
+}
+.styled-table tbody tr.active-row{
+  font-weight: bold;
+  color: white;
+  background-color: darkslateblue;
+}
+.container .content{
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  color: #f1f1f1f1;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  top:264px;
+  font-size: xx-large;
+}
+.container{
+  position: relative;
+  max-width: 800px;
+  margin:0 auto;
+}
+
+/* end teampage.html */
+
+/* leaguepage.html */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+   background: #efefef;
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.insidesport.in/wp-content/uploads/2020/07/IPL-2020-5.jpg');
+    background-size: cover;
+   font-family: sans-serif;
+}
+.title-box{
+  text-align: center;
+  margin: 100px auto 50px;
+}
+.title-box p{
+  margin-top: 10px;
+  line-height: 24px;
+}
+.title-line{
+  text-align: center;
+  margin: 100px auto 50px;
+}
+.profile-box{
+  width: 590px;
+  height: 400px;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 10px 10px rgba(115,193,255,0.1);
+  padding: 20px;
+  position: relative;
+}
+.profile-box img{
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 4px;
+}
+.profile-box h4{
+  margin-top: 25px;
+  margin-bottom: 5px;
+  color: #2196f3;
+}
+small{
+  color: #555;
+}
+.social-box{
+  background: #2196f3;
+  margin: 60px auto 20px;
+  text-align: center;
+  border-radius: 3px;
+}
+.social-box .fa{
+  margin: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.profile-box p{
+  text-align: center;
+  line-height: 24px;
+  color: #555;
+}
+.team-row{
+   background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.thestatesman.com/wp-content/uploads/2023/02/Untitled-design-2023-02-17T184545.299.jpg');
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+/* end leaguepage.html */
+
+
+
+
